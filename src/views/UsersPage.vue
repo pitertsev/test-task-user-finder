@@ -3,8 +3,7 @@
     <b-row>
       <b-col cols="10" offset="1">
         <h1>Список пользователей</h1>
-        <Users v-if="checkUsers"/>
-        <p v-else>Вы еще ничего не искали...</p>
+        <Users/>
       </b-col>
     </b-row>
   </b-container>
@@ -17,11 +16,6 @@ export default {
   components: {Users},
   created() {
     this.$store.dispatch('setRepos')
-  },
-  computed: {
-    checkUsers() {
-      return this.$store.getters.getUsers.length > 0
-    }
   }
 }
 </script>

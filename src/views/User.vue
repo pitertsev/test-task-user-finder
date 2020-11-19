@@ -2,9 +2,7 @@
   <b-container>
     <b-row>
       <b-col cols="10" offset="1">
-        <h1>Пользователь: {{ user.login }}</h1>
         <UserInfo :user="user"/>
-        <router-link to="/users">Назад</router-link>
       </b-col>
     </b-row>
   </b-container>
