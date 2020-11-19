@@ -13,7 +13,6 @@ describe('UsersInfo.vue', () => {
         }
       }
     })
-    expect(wrapper.find('h1').text()).toBe("Пользователь: jack")
     expect(wrapper.html().includes("ul")).toBeTruthy()
     expect(wrapper.findAll('li').at(0).text()).toBe("Ссылка на GitHub")
     expect(wrapper.findAll('li').at(1).text()).toBe("Количество публичных репозиториев: 25")

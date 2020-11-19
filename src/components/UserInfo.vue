@@ -1,6 +1,5 @@
 <template>
   <div>
-    <h1>Пользователь: {{ user.login }}</h1>
     <ul>
       <li> <a :href="user.html_url" target="_blank">Ссылка на GitHub</a></li>
       <li>Количество публичных репозиториев: {{ user.reposCount }}</li>
