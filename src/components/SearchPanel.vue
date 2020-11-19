@@ -26,7 +26,8 @@ export default {
         .then(res => res.data.items.map(user => {
           return {
             login: user.login,
-            repos: user.repos_url
+            url: user.url,
+            html_url: user.html_url
             }
           })
         )
@@ -34,7 +35,10 @@ export default {
           this.$store.dispatch('setUsers', data)
           this.$emit('search')
         })
-        .catch(error => console.log(error))
+        .catch(error => {
+          this.$emit('errorSearch', 'Ошибка подключения к серверу...')
+          console.log(error)
+        })
     }
   }
 }
