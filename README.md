@@ -15,9 +15,6 @@
 * Для роутинга - VueRouter
 
 ## Настройки выполненного задания
-### Ссылка на GitHub Pages
-[https://pitertsev.github.io/test-task-user-finder/](https://pitertsev.github.io/test-task-user-finder/)
-
 ### Клонировать репозиторий
 ```
 git clone [url repo]
