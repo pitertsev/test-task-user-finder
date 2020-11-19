@@ -24,13 +24,15 @@
           v-if="users.length > 3"
       ></b-pagination>
     </div>
-    <p v-else>Вы еще ничего не искали...</p>
+    <Message v-else message="Вы еще ничего не искали..."/>
   </div>
 </template>
 <script>
 
+import Message from './Message.vue'
 export default {
   name: "Users",
+  components: {Message},
   data: () => ({
     fields: [
       {
@@ -49,7 +51,7 @@ export default {
     perPage: 3,
     currentPage: 1,
   }),
-  mounted() {
+  created() {
     this.users = this.$store.getters.getUsers
   },
   computed: {

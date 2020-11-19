@@ -2,8 +2,8 @@
   <div>
     <h1>Пользователь: {{ user.login }}</h1>
     <ul>
-      <li>Логин пользователя: {{ user.login }}</li>
-      <li>Количество репозиториев: {{ user.reposCount }}</li>
+      <li> <a :href="user.html_url" target="_blank">Ссылка на GitHub</a></li>
+      <li>Количество публичных репозиториев: {{ user.reposCount }}</li>
     </ul>
     <router-link to="/users">Назад</router-link>
   </div>

@@ -12,8 +12,8 @@ export default {
       let users = []
       let promises = []
       state.users.forEach(user => {
-        axios.get(user.repos).then(res => {
-          user.reposCount = res.data.length
+        axios.get(user.url).then(res => {
+          user.reposCount = res.data.public_repos
           users.push(user)
         })
       })
@@ -30,6 +30,6 @@ export default {
   },
   getters: {
     getUsers: state => state.users,
-    getUser: state => id => state.users.find(user => user.login === id)
+    getUser: state => login => state.users.find(user => user.login === login)
   }
 }
