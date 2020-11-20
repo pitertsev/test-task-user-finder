@@ -2,7 +2,7 @@
   <b-container>
     <b-row>
       <b-col cols="10" offset="1">
-        <h1>Список пользователей</h1>
+        <Title title="Список пользователей"/>
         <Users/>
       </b-col>
     </b-row>
@@ -11,9 +11,10 @@
 
 <script>
 import Users from '../components/Users.vue'
+import Title from '../components/Title.vue'
 export default {
   name: "UsersPage",
-  components: {Users},
+  components: {Title, Users},
   created() {
     this.$store.dispatch('setRepos')
   }
