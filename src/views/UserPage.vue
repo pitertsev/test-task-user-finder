@@ -10,8 +10,9 @@
 </template>
 
 <script>
-import UserInfo from '../components/UserInfo.vue'
-import Title from '../components/Title.vue'
+import UserInfo from '../components/users/UserInfo.vue'
+import Title from '../components/ui/Title.vue'
+
 export default {
   name: "User",
   components: {Title, UserInfo},

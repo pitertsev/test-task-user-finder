@@ -7,7 +7,7 @@
 
 <script>
 import SearchPanel from '../components/SearchPanel.vue'
-import Message from '../components/Message.vue'
+import Message from '../components/ui/Message.vue'
 export default {
   name: 'Home',
   components: {Message, SearchPanel},

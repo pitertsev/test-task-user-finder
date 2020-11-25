@@ -29,7 +29,7 @@
 </template>
 <script>
 
-import Message from './Message.vue'
+import Message from '../ui/Message.vue'
 export default {
   name: "Users",
   components: {Message},
