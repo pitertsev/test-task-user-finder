@@ -10,8 +10,8 @@
 </template>
 
 <script>
-import Users from '../components/Users.vue'
-import Title from '../components/Title.vue'
+import Users from '../components/users/Users.vue'
+import Title from '../components/ui/Title.vue'
 export default {
   name: "UsersPage",
   components: {Title, Users},

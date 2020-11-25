@@ -2,9 +2,9 @@
   <h1 v-if="tag === 'h1'" :class="classes">{{ title }}</h1>
   <h2 v-else-if="tag === 'h2'" :class="classes">{{ title }}</h2>
   <h3 v-else-if="tag === 'h3'" :class="classes">{{ title }}</h3>
-  <h4 v-else-if="tag === 'h3'" :class="classes">{{ title }}</h4>
-  <h5 v-else-if="tag === 'h3'" :class="classes">{{ title }}</h5>
-  <h6 v-else-if="tag === 'h3'" :class="classes">{{ title }}</h6>
+  <h4 v-else-if="tag === 'h4'" :class="classes">{{ title }}</h4>
+  <h5 v-else-if="tag === 'h5'" :class="classes">{{ title }}</h5>
+  <h6 v-else-if="tag === 'h6'" :class="classes">{{ title }}</h6>
 </template>
 
 <script>
